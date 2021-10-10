@@ -64,23 +64,27 @@
         <strong> Limited amount of spots! </strong>
       </p>
       <br />
-      <button>Apply Now</button>
+      <button>Contact Us</button>
     </section>
     <script>
-      function canSpeakPortugese() {
-        let country = prompt("What country are you from?");
+      function contactUs() {
+        
+                let name = prompt("What is your name?");
+                let email = prompt("What is your e-mail?");
+                let h1 = document;
 
-  
-        country = country.trim();
 
-        if (country === "Brazil" || country === "Portugal") {
-          alert("You can speak Portugese");
-        } else {
-          alert("Go learn Portugese");
-        }
+                alert("Thank you" + name , "we'll be in touch")
       }
 
-      canSpeakPortugese();
+                let contactButton=document.querySelector("button");
+
+                contactButton.addEventListener("click",contactUs);
+
+
+
+      
+
     </script>
   </body>
 </html>
