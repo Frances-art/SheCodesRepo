@@ -64,28 +64,33 @@
         <strong> Limited amount of spots! </strong>
       </p>
       <br />
-      <button>Contact Us</button>
+      <button>Apply now</button>
     </section>
     <script>
       function contactUs() {
-        
-                let name = prompt("What is your name?");
-                let email = prompt("What is your e-mail?");
+
+                let name=  prompt("What is your first name?");
+                let age = prompt("How old are you?");
                 let h1 = document.querySelectorAll("h1");
-                h1.innerhtml = "Thank you" + name , "we'll be in touch";
+
+                if (age >= 18){
+                h1.innerhtml = "Hi" + name  + "! ,Welcome to SheCodes";
+                alert(h1.innerhtml)
+
+                                         
+
+              }
+                else if  (age< 18) {
+                  h1.innerhtml="Sorry" + name  + "! ,You cannot join SheCodes";
+                  alert(h1.innerhtml)
+
+                }};
 
 
-                alert("Thank you" + name , "we'll be in touch")
-      }
 
                 let contactButton=document.querySelector("button");
 
                 contactButton.addEventListener("click",contactUs);
-
-
-
-      
-
     </script>
   </body>
 </html>
