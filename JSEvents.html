@@ -56,41 +56,56 @@
 
   <body>
     <section>
-      <h1>👩‍💻 She Codes is a Coding Workshop for Women</h1>
-      <h2>Access a new career in Technology</h2>
+      <h1>
+        👩‍💻 She Codes is a Coding Workshop for Women
+      </h1>
+      <h2>
+        Access a new career in Technology
+      </h2>
       <p>
         She Codes teaches coding, design and management skills to women
         <br />
-        <strong> Limited amount of spots! </strong>
+        <strong>
+          Limited amount of spots!
+        </strong>
       </p>
       <br />
-      <button>Apply now</button>
+      <button>
+        Apply Now
+      </button>
     </section>
     <script>
-      function contactUs() {
 
-                let name=  prompt("What is your first name?");
+function apply() {
+
+                let name    =  prompt("What is your first name?");
                 let age = prompt("How old are you?");
-                let h1 = document.querySelectorAll("h1");
+                 let h1 = document.querySelector("h1");
+                
 
                 if (age >= 18){
-                h1.innerhtml = "Hi" + name  + "! ,Welcome to SheCodes";
-                alert(h1.innerhtml)
+                  
+                h1.innerHTML = "Hi" + name  + "! ,Welcome to SheCodes";
+                
 
-                                         
+                }
+                else  {
+                  
+                  h1.innerHTML="Sorry" + name  + "! ,You cannot join SheCodes";
+                  
 
+                }
               }
-                else if  (age< 18) {
-                  h1.innerhtml="Sorry" + name  + "! ,You cannot join SheCodes";
-                  alert(h1.innerhtml)
-
-                }};
 
 
 
-                let contactButton=document.querySelector("button");
+                let applyButton=document.querySelector("button");
 
-                contactButton.addEventListener("click",contactUs);
+                applyButton.addEventListener("click",apply);
+
     </script>
   </body>
 </html>
+
+      
+ 
