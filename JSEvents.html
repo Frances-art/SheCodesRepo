@@ -76,33 +76,28 @@
     </section>
     <script>
 
-function apply() {
+  function updateHeading(newHeading) {
+        let heading = document.querySelector("h1");
+        heading.innerHTML = newHeading;
+      }
 
-                let name    =  prompt("What is your first name?");
-                let age = prompt("How old are you?");
-                 let h1 = document.querySelector("h1");
-                
+      function canApply() {
+        let age = prompt("How old are you?");
+        return age >= 18;
+      }
 
-                if (age >= 18){
-                  
-                h1.innerHTML = "Hi" + name  + "! ,Welcome to SheCodes";
-                
+      function apply() {
+        let firstName = prompt("What is your first name?");
 
-                }
-                else  {
-                  
-                  h1.innerHTML="Sorry" + name  + "! ,You cannot join SheCodes";
-                  
+        if (canApply()) {
+          updateHeading(`Hi ${firstName}! Welcome to SheCodes 👩‍💻`);
+        } else {
+          updateHeading(`Sorry ${firstName}, you can't apply to SheCodes.`);
+        }
+      }
 
-                }
-              }
-
-
-
-                let applyButton=document.querySelector("button");
-
-                applyButton.addEventListener("click",apply);
-
+      let applyButton = document.querySelector("button");
+      applyButton.addEventListener("click", apply);
     </script>
   </body>
 </html>
