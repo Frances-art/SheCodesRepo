@@ -71,7 +71,8 @@
         
                 let name = prompt("What is your name?");
                 let email = prompt("What is your e-mail?");
-                let h1 = document;
+                let h1 = document.querySelectorAll("h1");
+                h1.innerhtml = "Thank you" + name , "we'll be in touch";
 
 
                 alert("Thank you" + name , "we'll be in touch")
