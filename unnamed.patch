@@ -1,0 +1,16 @@
+Index: homework1.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/homework1.html b/homework1.html
+--- a/homework1.html	(revision 455e2e82a2bd3c80511cf563d51063f7d1e81f7c)
++++ b/homework1.html	(date 1633969808995)
+@@ -14,6 +14,7 @@
+         .everything{
+             text-align: center;
+         }
++        hey
+ 
+         .Tokyo{
+             font-size: 40px;

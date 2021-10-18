@@ -101,21 +101,16 @@
     <p>Coded by Matt Delac</p>
     <script>
       function emoji() {
-        
-
         let city = prompt("What city do you live in?");
         let temperature = prompt("What temperature is it?");
-      let changes = document.querySelector("h1");
+        let changes = document.querySelector("h1");
 
-      if (temperature < 0) {
-       changes.innerHTML = `😢 It is currently ${temperature}°  in ${city}`
-      } else {
-      changes.innerHTML = `😄 It is currently ${temperature}° in ${city}`
+        if (temperature < 0) {
+          changes.innerHTML = `😢 It is currently ${temperature}°  in ${city}`;
+        } else {
+          changes.innerHTML = `😄 It is currently ${temperature}° in ${city}`;
+        }
       }
-
-    }
-
-
 
       let change = document.querySelector("button");
       change.addEventListener("click", emoji);
